@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :parents
+
   root :to => 'assets#index'
   get 'assets/index'
 
