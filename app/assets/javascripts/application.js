@@ -15,3 +15,18 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+
+App = Ember.Application.create({
+  ready: function() {
+    console.log('Ember App ready!');
+    LOG_TRANSITIONS: true
+  }
+});
+
+// App.Router.reopen({
+//   rootURL: '/blog/'
+// });
+
+App.Router.map(function() {
+  this.route("parents");
+});

@@ -1,4 +1,5 @@
 class ParentsController < ApplicationController
+  respond_to :json
   before_action :set_parent, only: [:show, :edit, :update, :destroy]
 
   # GET /parents

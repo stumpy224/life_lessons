@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Life Lessons</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <%= javascript_include_tag "application" %>
-</body>
+  <head>
+    <title>Life Lessons</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= javascript_include_tag "application" %>
+    <script type="text/x-handlebars">
+      <div>
+        {{#link-to "parents"}}Parents{{/link-to}}
+        {{outlet}}
+      </div>
+    </script>
+  </body>
 </html>

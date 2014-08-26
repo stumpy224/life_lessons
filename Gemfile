@@ -14,6 +14,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+gem 'pry', '~> 0.10.1'
+
 gem 'bootstrap-sass', '~> 3.2.0'
 
 # Use jquery as the JavaScript library
@@ -40,7 +42,4 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-
-gem "active_model_serializers"
-gem "ember-rails", "~>0.14"
-gem "ember-source", "~>1.1"
+gem 'ember-rails', github: 'emberjs/ember-rails'
